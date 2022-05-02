@@ -16,8 +16,8 @@ module.exports = class IntegerToken extends Token{
     equals(other){
         if(other instanceof IntegerToken){
             let asInt = other
-            if (asInt.value){
-                return this.value === asInt.value;
+            if (this.value === asInt.value){
+                return true;
             }
         } else {
             return false;

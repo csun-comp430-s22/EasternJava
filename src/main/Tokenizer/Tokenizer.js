@@ -25,16 +25,6 @@ module.exports = class Tokenizer {
         }
     }
 
-    isDigit(input) {
-        if (Number.isInteger(input)) {
-            return true
-        } else if ((input % 1 != 0) && !isNaN(input)) {
-            return true
-        } else {
-            return false
-        }
-    }
-
     isLetter(input) {
         let letter = RegExp("[A-Za-z]");
         input = input.toString()
@@ -77,7 +67,8 @@ module.exports = class Tokenizer {
 
             while (this.offset < this.input.length &&
                 this.isLetter(this.input.charAt(this.offset)) ||
-                this.isDigit(this.input.charAt(this.offset))) {
+                Number.isInteger(this.input.charAt(this.offset))
+                ) {
                 name += this.input.charAt(this.offset);
                 this.offset++;
             }
@@ -129,8 +120,8 @@ module.exports = class Tokenizer {
         this.skipWhiteSpace();
 
         if (this.offset < this.input.length &&
-            (retval = this.tryTokenizeInteger()) == null &&
             (retval = this.tryTokenizeVariableOrKeyword()) == null &&
+            (retval = this.tryTokenizeInteger()) == null &&
             (retval = this.tryTokenizeSymbol()) == null) {
             throw new TokenizerException();
         }
@@ -143,7 +134,6 @@ module.exports = class Tokenizer {
         let tokens = []
         try {
             let token = this.tokenizeSingle();
-
             while (token != null) {
                 tokens.push(token);
                 token = this.tokenizeSingle();
