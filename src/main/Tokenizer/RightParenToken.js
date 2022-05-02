@@ -1,7 +1,7 @@
 const Token = require("./Token")
 module.exports = class RightParenToken extends Token {
     equals(other){
-        return other instanceof RightCurlyToken
+        return other instanceof RightParenToken
     }
     
     hashCode(){

@@ -5,7 +5,7 @@ module.exports = class TrueToken extends Token {
     }
     
     hashCode(){
-        return 1;
+        return 0;
     }
  
     toString(){

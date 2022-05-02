@@ -1,0 +1,64 @@
+ PASS  src/test/Tokenizer Test/Tokenizer.test.js
+  √ Test tokenize empty String:  (25 ms)
+  √ Test tokenize only Whitespace:  (3 ms)
+  √ Test tokenize False by itself:  (3 ms)
+  √ Test tokenize Variable:  (4 ms)
+  √ Test tokenize "truetrue" is Variable:  (3 ms)
+  √ Test Empty Variable to Hash Code
+  √ Test Zero Variable to Hash Code
+  √ Test Variable Equals Variable (1 ms)
+  √ Test Integer Not Equal to Variable
+  √ Test Variable to Hash Code
+  √ Test tokenize "true true" is two True Tokens:  (2 ms)
+  √ Test tokenize single-digit Integer:  (9 ms)
+  √ Test tokenize multi-digit Integer:  (7 ms)
+  √ Test single-digit Integer to String (1 ms)
+  √ Test multi-digit Integer to String
+  √ Test single-digit Integer Hash Code
+  √ Test multi-digit Integer Hash Code
+  √ Test Integer Equals Integer (1 ms)
+  √ Test Variable Not Equal to Variable
+  √ Test False Equals False (1 ms)
+  √ Test False Hash is 1
+  √ Test True Equals True
+  √ Test True Hash is 0
+  √ Test Else Hash is 7
+  √ Test Else Equals Else
+  √ Test If Hash is 2 (1 ms)
+  √ Test If Equals If
+  √ Test RightParenToken Hash is 4 (1 ms)
+  √ Test RightParen Equals RightParen (1 ms)
+  √ Test LeftParenToken Hash is 3
+  √ Test LeftParen Equals LeftParen
+  √ Test RightCurlyToken Hash is 6
+  √ Test RightCurly Equals RightCurly
+  √ Test LeftParenToken Hash is 3
+  √ Test LeftParen Equals LeftParen
+  √ Test LeftCurlyToken Hash is 5
+  √ Test LeftCurly Equals LeftCurly
+  √ Test all remaining:  (3 ms)
+  √ Test "Invalid":  (26 ms)
+
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |     100 |    95.74 |     100 |     100 | 
+ ElseToken.js          |     100 |      100 |     100 |     100 | 
+ FalseToken.js         |     100 |      100 |     100 |     100 | 
+ IfToken.js            |     100 |      100 |     100 |     100 | 
+ IntegerToken.js       |     100 |       75 |     100 |     100 | 19
+ LeftCurlyToken.js     |     100 |      100 |     100 |     100 |                   
+ LeftParenToken.js     |     100 |      100 |     100 |     100 | 
+ RightCurlyToken.js    |     100 |      100 |     100 |     100 | 
+ RightParenToken.js    |     100 |      100 |     100 |     100 | 
+ Token.js              |     100 |      100 |     100 |     100 | 
+ Tokenizer.js          |     100 |      100 |     100 |     100 | 
+ TokenizerException.js |     100 |      100 |     100 |     100 | 
+ TrueToken.js          |     100 |      100 |     100 |     100 | 
+ VariableToken.js      |     100 |    83.33 |     100 |     100 | 30
+-----------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       39 passed, 39 total
+Snapshots:   0 total
+Time:        0.739 s, estimated 1 s
+Ran all test suites.
