@@ -2,6 +2,7 @@ const Exp = require("./Exp");
 
 module.exports = class OpExp extends Exp {
     constructor(left, op, right) {
+        super();
         this.left = left;
         this.op = op;
         this.right = right;
@@ -17,10 +18,6 @@ module.exports = class OpExp extends Exp {
         } else {
             return false;
         }
-    }
-
-    hashCode() {
-        return (this.left.hashCode() + this.op.hashCode() + this.right.hashCode())
     }
 
     toString() {

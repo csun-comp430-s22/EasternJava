@@ -1,5 +1,4 @@
-const Stmt = require("./Stmt");
-
+const Op = require("./Op");
 module.exports = class LessThanOp extends Op{
     equals(other) {
         return (other instanceof LessThanOp);

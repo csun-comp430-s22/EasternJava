@@ -2,6 +2,7 @@ const Exp = require("./Exp");
 
 module.exports = class VariableExp extends Exp {
     constructor(variable) {
+        super();
         this.variable = variable;
     }
 
@@ -9,10 +10,6 @@ module.exports = class VariableExp extends Exp {
         return (other instanceof VariableExp &&
             value == other.variable
         )
-    }
-
-    hashCode() {
-        return (this.variable.hashCode())
     }
 
     toString() {

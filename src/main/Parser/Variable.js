@@ -4,17 +4,14 @@ module.exports = class Variable {
         this.name = name;
     }
 
-    hashCode() {
-        return this.name.hashCode();
-    }
 
     equals(other) {
-        return (other instanceof PrintlnStmt &&
+        return (other instanceof Variable &&
             this.name === other.name
         )
     }
 
     toString() {
-        return "Println(" + exp.toString() + ")"
+        return this.name
     }
 }

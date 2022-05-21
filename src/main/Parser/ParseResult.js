@@ -3,10 +3,7 @@ module.exports = class ParseResult {
         this.result = result;
         this.position = position;
     }
-
-    hashCode() {
-        return this.result.hashCode() + this.position;
-    }
+ 
 
     equals(other) {
         if (other instanceof ParseResult) {

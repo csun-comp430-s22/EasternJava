@@ -5,10 +5,6 @@ module.exports = class PrintlnStmt extends Stmt {
         this.exp = exp;
     }
 
-    hashCode() {
-        return this.exp.hashCode();
-    }
-
     equals(other) {
         return (other instanceof PrintlnStmt &&
             this.exp === (other.exp)

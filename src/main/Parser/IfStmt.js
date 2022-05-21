@@ -2,15 +2,10 @@ const Stmt = require("./Stmt");
 
 module.exports = class IfStmt extends Stmt {
     constructor(guard, trueBranch, falseBranch) {
+        super();
         this.guard = guard;
         this.trueBranch = trueBranch;
         this.falseBranch = falseBranch;
-    }
-
-    hashCode() {
-        return (this.guard.hashCode() +
-            this.trueBranch.hashCode() +
-            this.falseBranch.hashCode());
     }
 
     equals(other) {

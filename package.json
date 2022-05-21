@@ -3,6 +3,8 @@
     "jest": "^27.5.1"
   },
   "scripts": {
+    "parserTest": "jest Parser.test.js --coverage",
+    "tokenizerTest": "jest Tokenizer.test.js --coverage",
     "test": "jest --coverage"
   }
 }
