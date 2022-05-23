@@ -183,6 +183,6 @@ test('Test all remaining: ', () => {
 })
 
 test('Test "Invalid": ', () => {
-    expect(assertTokenizes("$", [null])).toBe(true)
+     expect(assertTokenizes("$", [null])).toBe(true)
 })
 
