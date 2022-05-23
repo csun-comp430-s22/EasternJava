@@ -4,10 +4,6 @@ module.exports = class EqualsOp extends Op{
         return (other instanceof EqualsOp);
     }
 
-    hashCode() {
-        return 3 ;
-    }
-
     toString() {
         return "EqualsOp";
     }

@@ -1,0 +1,48 @@
+All files              |   68.37 |    39.39 |   46.15 |   68.58 | 
+ Parser                |   76.29 |    46.42 |   59.25 |   76.29 |                                
+  BlockStmt.js         |      50 |      100 |       0 |      50 | 5-6
+  BooleanLiteralExp.js |   66.66 |        0 |   33.33 |   66.66 | 10-16
+  EqualsOp.js          |     100 |      100 |     100 |     100 | 
+  Exp.js               |     100 |      100 |     100 |     100 | 
+  IfStmt.js            |   54.54 |        0 |   33.33 |   54.54 | 12-23
+  IntegerExp.js        |     100 |      100 |     100 |     100 | 
+  LessThanOp.js        |     100 |      100 |     100 |     100 | 
+  MinusOp.js           |     100 |      100 |     100 |     100 | 
+  Node.js              |     100 |      100 |     100 |     100 | 
+  Op.js                |     100 |      100 |     100 |     100 | 
+  OpExp.js             |   54.54 |        0 |   33.33 |   54.54 | 12-24
+  ParseExecption.js    |     100 |      100 |     100 |     100 | 
+  ParseResult.js       |   42.85 |        0 |      50 |   42.85 | 9-14
+  Parser.js            |   80.91 |       80 |   83.33 |   80.91 | 53,149,182-196,198-202,209-225
+  PlusOp.js            |     100 |      100 |     100 |     100 | 
+  PrintlnStmt.js       |      40 |        0 |       0 |      40 | 5-15
+  PrintlnToken.js      |      50 |      100 |       0 |      50 | 4-9
+  Program.js           |   66.66 |      100 |       0 |   66.66 | 4
+  ReturnStmt.js        |   66.66 |        0 |   33.33 |   66.66 | 10-16
+  Stmt.js              |     100 |      100 |     100 |     100 | 
+  Variable.js          |      50 |        0 |   33.33 |      50 | 9-15
+  VariableExp.js       |   66.66 |        0 |   33.33 |   66.66 | 10-16
+ Tokenizer             |      50 |        0 |      32 |    50.5 | 
+  ElseToken.js         |      60 |      100 |   33.33 |      60 | 5-9
+  EqualsToken.js       |      80 |      100 |   66.66 |      80 | 13
+  FalseToken.js        |      40 |      100 |       0 |      40 | 4-12
+  IfToken.js           |      40 |      100 |       0 |      40 | 4-12
+  IntegerToken.js      |   36.36 |        0 |      25 |   36.36 | 9-23
+  LeftCurlyToken.js    |      40 |      100 |       0 |      40 | 4-12
+  LeftParenToken.js    |      40 |      100 |       0 |      40 | 4-12
+  LessThanToken.js     |     100 |      100 |     100 |     100 | 
+  MinusToken.js        |      80 |      100 |   66.66 |      80 | 13
+  PlusToken.js         |      80 |      100 |   66.66 |      80 | 13
+  ReturnToken.js       |      75 |      100 |      50 |      75 | 5
+  RightCurlyToken.js   |      40 |      100 |       0 |      40 | 4-12
+  RightParenToken.js   |      60 |      100 |   33.33 |      60 | 4-8
+  SemicolonToken.js    |      60 |      100 |   33.33 |      60 | 4-8
+  Token.js             |     100 |      100 |     100 |     100 | 
+  TrueToken.js         |      40 |      100 |       0 |      40 | 4-12
+  VariableToken.js     |   21.05 |        0 |      25 |   22.22 | 10-34
+-----------------------|---------|----------|---------|---------|--------------------------------
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 37 passed, 38 total
+Snapshots:   0 total
+Time:        0.538 s, estimated 1 s
+Ran all test suites matching /Parser.test.js/i.
