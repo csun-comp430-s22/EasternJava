@@ -5,6 +5,7 @@
   "scripts": {
     "parserTest": "jest Parser.test.js --coverage",
     "tokenizerTest": "jest Tokenizer.test.js --coverage",
+    "typecheckerTest": "jest Typechecker.test.js --coverage",
     "test": "jest --coverage"
   }
 }
